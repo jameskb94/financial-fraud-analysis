@@ -1,7 +1,10 @@
 # Transaction Fraud: Risk & Detection Analysis
 An interactive Power BI dashboard analysing 6.36 million simulated financial transactions to assess fraud incidence, financial exposure and the effectiveness of an existing rule-based detection mechanism.
 
-[Screenshots coming soon]
+### Fraud Overview
+![Fraud Overview](https://github.com/jameskb94/financial-fraud-analysis/blob/main/PBIDesktop_uNyQbZni2K.png)
+### Fraud Detection Effectiveness
+![Fraud Detection](https://github.com/jameskb94/financial-fraud-analysis/blob/main/PBIDesktop_Vf5vjhHEfr.png)
 
 ## Project Overview
 We are addressing the issue of transaction fraud from within a simulated financial transaction dataset. The project examines a hypothetical financial services provider with substantial exposure to fraudulent transactions and evaluates the effectiveness of an existing rule-based fraud detection mechanism. The purpose of this project is to identify just how much fraud is being missed, the overall monetary exposure to fraud, as well as to provide hypothetical recommendations to improve fraud detection rates. The intended audience of this report would be a key decision maker such as a Fraud Operations Manager, Risk Analyst or a Head of Financial Crime. The dashboard serves mainly as a tool for assessing fraud detection performance, but also provides metrics for ongoing monitoring. The dashboard supports decisions about where fraud monitoring resources should be prioritised and provides a basis for evaluating existing detection methods.
@@ -29,7 +32,7 @@ Comparing the `Flagged Transactions` and `isFlaggedFraud` variables allowed me t
 
 ## Key findings
 
-**Finding 1 - Fraud instances are relatively rare but are financially significant:** Fraudulent transactions represent just 0.13% of transaction volume but account for approximately 1.05% of total transaction value. Measuring fraud solely by transaction count leads to all fraud cases being treated equally regardless of their size. Notably, fraudulent transactions are roughly 8.2 times larger than the average legitimate one.
+**Finding 1 - Fraud instances are relatively rare but are financially significant:** Fraudulent transactions represent just 0.13% of transaction volume but account for approximately 1.05% of total transaction value. Measuring fraud solely by transaction count leads to all fraud cases being treated equally regardless of their size. Notably, the average fraudulent transaction is roughly 8.2 times larger than a legitimate one.
 
 **Finding 2 - Fraud incidence differs by transaction type:** Although TRANSFER and CASH_OUT transactions account for approximately equal numbers of fraudulent cases, their fraud rates differ substantially: 0.77% and 0.18%, respectively. Both categories also contribute approximately equal financial exposure. This demonstrates why monitoring priorities should consider fraud frequency, transaction-level risk and financial exposure rather than relying on any single metric.
 
