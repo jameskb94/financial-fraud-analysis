@@ -44,13 +44,18 @@ Comparing the `Flagged Transactions` and `isFlaggedFraud` variables allowed me t
 2. The dataset is ordered chronologically by a 'step' variable, but irregular daily transaction volumes complicate the interpretation of time-based fraud rates and trends, particularly where transaction counts are unusually low.
 3. The dataset does not establish the operational outcomes of each transaction i.e. whether they were blocked, investigated, recovered or resulted in financial losses.
 
-## Data Attribution
+## Attribution
+### Fraud Dataset
 Synthetic Financial Datasets For Fraud Detection by [Edgar Lopez-Rojas](https://www.kaggle.com/ealaxi)
-Available on Kaggle: https://www.kaggle.com/datasets/ealaxi/paysim1
+Available on Kaggle: [https://www.kaggle.com/datasets/ealaxi/paysim1]([url](https://www.kaggle.com/datasets/ealaxi/paysim1))
 
 This dataset is part of a paper on the PaySim software.
 
 E. A. Lopez-Rojas , A. Elmir, and S. Axelsson. "PaySim: A financial mobile money simulator for fraud detection". In: The 28th European Modeling and Simulation Symposium-EMSS, Larnaca, Cyprus. 2016
 
+### Dplyr package for R
+Wickham, H., François, M., Bryan, J., & Müller, K. (2023). dplyr: A Grammar of Data Manipulation. R package version 1.1.4. r-project.org
+
 ## Technical Implementation
-Coming soon
+R code used for validating/inspecting dataset available [here](https://github.com/jameskb94/financial-fraud-analysis/blob/main/R_code.r).
+DAX expressions coming soon.
