@@ -1,0 +1,57 @@
+//Overview measures
+
+Total Transactions =
+COUNTROWS('Transactions')
+
+Fraud Transactions =
+CALCULATE(
+  [Total Transactions],
+  'Transactions'[isFraud] = 1
+)
+
+Fraud Rate = 
+DIVIDE(
+	[Fraud Transactions],
+	[Total Transactions]
+)
+
+Total Transaction Value =
+SUM('Transactions'[amount])
+
+Fraud Exposure = 
+CALCULATE(
+	[Total Transaction Value],
+	'Transactions'[isFraud] = 1
+)
+
+//Fraud detection measures
+  
+Flagged Transactions = 
+CALCULATE(
+	[Total Transactions],
+	'Transactions'[isFlaggedFraud] = 1
+)
+
+Detected Fraud =
+CALCULATE(
+	[Fraud Transactions],
+	'Transactions'[isFlaggedFraud] = 1
+)
+
+Detected Fraud Exposure = 
+CALCULATE(
+	[Total Transaction Value],
+	'Transactions'[isFraud] = 1 || 'Transactions'[isFlagged] = 1
+)
+
+Missed Fraud =
+[Fraud Transactions] - [Detected Fraud]
+
+Detection Rate =
+Divide(
+	[Detected Fraud],
+	[Fraud Transactions]
+)
+
+Precision = 
+(Total Transactions - falsePos)/Total Transactions)
