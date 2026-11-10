@@ -61,4 +61,4 @@ Wickham, H., François, M., Bryan, J., & Müller, K. (2023). dplyr: A Grammar of
 
 ## Technical Implementation
 R code used for validating/inspecting dataset available [here](https://github.com/jameskb94/financial-fraud-analysis/blob/main/R_code.r).
-DAX expressions coming soon.
+DAX expressions available [here]([url](https://github.com/jameskb94/financial-fraud-analysis/blob/main/dax_measures.dax)).
